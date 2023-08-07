@@ -1,12 +1,10 @@
-Commands-
-
-> cd to this location 
-
-requirements -
+Requirements -
 
 install node (for npm) 
 
-run-
+Commands-
+
+> cd to this location 
 
 > npm i 
 
