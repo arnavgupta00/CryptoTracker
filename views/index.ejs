@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="first">
+        <form action="/" id="form" class="form" method="POST">
+            <input class="symbol" name="symbol" type="text" placeholder="Type Symbol (eg: BTC-USD)" >
+            <input  type="submit" value="GO" placeholder="GO" formaction="/submit" >
+        
+        </form>
+        <div class="content">
+            <%if(locals.data){%>
+                <h1 class="text">Symbol: <%= data.symbol%></h1>
+                <h2 class="text">Price: $<%= data.price_24h%></h2>
+                <h3 class="text">Volume: <%= data.volume_24h %></h3>
+                <h3 class="text">Last Traded Price: $<%= data.last_trade_price %></h3>
+            <%}else{%>
+                
+            <%}%>
+            
+            
+
+        </div>
+    </div>
+    <script>
+        function clicked(){
+            document.querySelector(".go").classList.add("anim");
+            setTimeout(document.querySelector(".go").classList.remove("anim"),1000)
+        }
+    </script>
+</body>
+</html>

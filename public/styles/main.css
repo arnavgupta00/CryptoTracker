@@ -1,0 +1,40 @@
+html{
+    background-color: #212534;
+}
+body{
+    
+    position: absolute;
+    left: 30vw;
+    top: 30vh;
+}
+
+.symbol{
+    height: 5vh;
+    width: 30vw;
+    border-radius: 15px;
+}
+
+.go{
+    background-color: rgb(33, 141, 14);
+    border-color: transparent;
+    height: 5vh;
+    width: 3vw;
+    border-radius: 15px;
+}
+.go:hover{
+    opacity: 0.5;
+}
+
+.content{
+    background-color: transparent;
+    margin-top: 2%;
+    height: 30vh;
+    width: 33vw;
+    border: 5px solid white;
+    border-radius:15px ;
+}
+
+.text{
+    margin-left: 3%;
+    color: aliceblue;
+}
